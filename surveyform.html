@@ -1,0 +1,120 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Pacifico&display=swap" rel="stylesheet">
+<style>
+  html {
+    background-color: #173F5F;
+  }
+  main{
+    background-color: #FFFFFF;
+    border-radius: 5%;
+    font-family: 'Montserrat', sans-serif;
+  }
+  header{
+    color: #ED553B;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+  }
+  #title {
+    
+  }
+  body {
+    
+  }
+  #description {
+   text-align: center; 
+    font-size: 1em;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  strong {
+    color: #3CEAC3;
+    font-weight: 800;
+  }
+  #survey-form {
+    margin-left: 30px;
+    margin-right: 30px; 
+  }
+  #name {
+    width: 100%;
+    border: 3px solid #3CAEA3;
+    height: 2em;
+  }
+  #email {
+    width: 100%;
+        border: 3px solid #3CAEA3;
+    height: 2em;
+  }
+  #number {
+    width: 100%;
+        border: 3px solid #3CAEA3;
+    height: 2em;
+  }
+  #dropdown {
+    width: 100%;
+        border: 3px solid #3CAEA3;
+    height: 2em;
+  }
+  .label {
+    font-weight: 700;
+  }
+  textarea {
+    width: 100%;
+        border: 3px solid #3CAEA3;
+    height: 2em;
+  }
+  button {
+    background-color: #ED553B;
+    padding: 7px 7px;
+    color: #FFFFFF;
+    border: none;
+     font-family: 'Montserrat', sans-serif;
+    border-radius: 10%;
+  }
+  footer {
+    text-align: center;
+    font-style: italic;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  button:hover {
+    background-color: #FFFFFF;
+    color: #ED553B;
+    border: 1px solid #ED553B;
+  }
+</style>
+<main id="main">
+  <header><h1 id="title">Ice Cream Social</h1></header>
+  <body>
+  <p id="description">Getting to know your neighbors in a brand-new neighborhood is hard. But it doesn't have to be. Get to know your neighbors over a sweet, frozen treat. Sign up to attend the next <strong>Neighborhood Name</strong> ice cream social! Events are held every quarter and all residents are invited to attend. To RSVP, fill out and submit the form below.</p>
+  <form id="survey-form">
+    <label for="name" id="name-label" class="label">Name:</label><br>
+    <input type="text" id="name" placeholder="First & Last Name" required><br><br>
+    <label for="email" id="email-label" class="label">Email Address</label><br>
+    <input type="email" id="email" placeholder="Email Address" required><br><br>
+    <label for="number" id="number-label" class="label">Age:</label><br>
+    <input type="number" id="number" placeholder="Age" min="18" max="99" required><br><br>
+    <label for="dropdown" id="dropdown-label" class="label">Favorite Ice Cream</label><br>
+    <select id="dropdown">
+      <option>Vanilla</option>
+      <option>Chocolate</option>
+      <option>Strawberry</option>
+    <option>Cookies 'n' Cream</option>
+      <option>Pistachio</option>
+      </select><br><br>
+    <label for="radio" id="fav-color-label" class="label">Bowl Color:</label><br>
+    <label for="radio-red" name="fav-color"><input type="radio" name="fav-color" id="radio-red" value="red" checked>Red</label><br>
+    <label for="radio-blue" name="fav-color"><input type="radio" name="fav-color" id="radio-blue" value="blue">Blue</label><br>
+    <label for="radio-green" name="fav-color"><input type="radio" name="fav-color" id="radio-green" value="green">Green</label><br><br>
+    <label for="toppings" name="toppings" class="label">Toppings:</label><br>
+    <label for="toppings" name="toppings"><input type="checkbox" name="toppings" id="toppings-none" value="none" checked>None</label><br>
+    <label for="toppings" name="toppings"><input type="checkbox" name="toppings" id=toppings-sprinkles value="sprinkles">Sprinkles</label><br>
+    <label for="toppings" name="toppings"><input type="checkbox" name="toppings" id="toppings-syrup" value="chocsyrup">Chocolate Syrup</label><br>
+    <label for="toppings" name="toppings"><input type="checkbox" name="toppings" id="toppings-strawberry" value="strawsyrup">Strawberry Syrup</label><br><br>
+    <label for="comments" id="comment-label" class="label">Comments</label><br>
+    <textarea name="comments" form="survey-form">Comments go here...</textarea><br><br>
+    <button id="submit" type"submit">Submit</button>
+  </form>
+  </body>
+  <footer>Designed by Gabrielle Melton - Project for <a href="https://www.freecodecamp.org/learn" target="_blank">FreeCodeCamp.org</a></footer>
+</main>
